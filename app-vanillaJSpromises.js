@@ -17,7 +17,7 @@
 	function XHRRequestArticle(){
 		return new Promise(function(resolve, reject ){
 			const nytRequest = new XMLHttpRequest();
-			nytRequest.open('GET', `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=ea1720d1049348e4b321dea56dbdcba1`);
+			nytRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=ea1720d1049348e4b321dea56dbdcba1`);
 			nytRequest.onload = function() {
 				if (nytRequest.status==200) {
 					resolve(nytRequest.response);
