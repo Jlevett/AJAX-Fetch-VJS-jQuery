@@ -40,7 +40,7 @@
 
 
 	function XHRRequestArticle(){
-		fetch(`http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=ea1720d1049348e4b321dea56dbdcba1`)
+		fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=ea1720d1049348e4b321dea56dbdcba1`)
 		.then(response=>response.json()).then(addArticle).catch(function(error){console.log(error);});
 	}
 
