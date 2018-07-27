@@ -20,7 +20,7 @@
 		nytRequest.onerror = function(err){
 			requestError(err,'article');
 		}
-		nytRequest.open('GET', `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=ea1720d1049348e4b321dea56dbdcba1`);
+		nytRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=ea1720d1049348e4b321dea56dbdcba1`);
 		//No setRequestHeader is needed for this request to NYT
 		nytRequest.send();
 	}
