@@ -16,7 +16,7 @@
 
 	function XHRRequestArticle(){
 		$.ajax({
-			url: `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=ea1720d1049348e4b321dea56dbdcba1`
+			url: `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=ea1720d1049348e4b321dea56dbdcba1`
 		}).done(addArticle);
 		//but no error handling.
 	}
